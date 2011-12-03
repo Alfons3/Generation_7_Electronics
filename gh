@@ -1,0 +1,517 @@
+commit 3f970842965fb0d10f468ca43ccb453ab4b778bc
+Author: i <EFZ-Lohmen@web.de>
+Date:   Fri Dec 2 07:05:19 2011 +0100
+
+    small changes
+
+commit 304b09724d590c9b4e7a75e659be785825f7e56b
+Author: i <EFZ-Lohmen@web.de>
+Date:   Sat Nov 19 07:40:14 2011 +0100
+
+    added the capacitors to the extension board
+
+commit b959edaf74fb844c2a9604da7d8fb93d85001548
+Author: i <EFZ-Lohmen@web.de>
+Date:   Wed Nov 16 09:24:14 2011 +0100
+
+    added the extension board
+
+commit 0739faf4934b1dcd198e8301f1fb85ec4206b5ad
+Author: i <EFZ-Lohmen@web.de>
+Date:   Wed Nov 16 09:12:41 2011 +0100
+
+    moved some parts
+
+commit 1e0f96d3a5e5320c3f7c8d44f04c6388ad298e91
+Author: i <EFZ-Lohmen@web.de>
+Date:   Sat Nov 12 08:43:45 2011 +0100
+
+    added header for extension board
+
+commit 89217c19a37dbbfb84697587cc4204325a4db512
+Author: i <EFZ-Lohmen@web.de>
+Date:   Fri Nov 11 19:13:13 2011 +0100
+
+    conected x-axis pololu and power on/off to other pins of the ATmega to make space for a header
+
+commit 32d91aad265d11427a5262155a1d01dc73ab2bc1
+Author: i <EFZ-Lohmen@web.de>
+Date:   Fri Nov 11 18:55:28 2011 +0100
+
+    added SPI header for extension bord
+
+commit 44efed7b90c2b33fafc66730d147233af81d8f39
+Author: i <EFZ-Lohmen@web.de>
+Date:   Fri Nov 11 18:22:03 2011 +0100
+
+    moved the endstop connectors and cleand up the schematics
+
+commit 2964c946f6c620b781d3a073eef7034eaf626a65
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Sun Oct 30 18:43:22 2011 +0100
+
+    Board: replace the big motor connectors with Molex KK 100 ones.
+    
+    This is pretty much the standard now, as Sanguinololu and
+    RAMPS use these for quite some time.
+
+commit f38c83e50278ec1b63a476f14dc7d960a3ddcdaa
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Sun Oct 30 18:10:34 2011 +0100
+
+    Add a Molex KK 100 4-pin footprint.
+
+commit b1cbe305029f1574a2602e84bc472e5d30a8cdc5
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Sat Oct 29 20:51:04 2011 +0200
+
+    Board: move the ICMP header to the left of the ATmega.
+    
+    This saves a fantasic 3 wire bridges without drawback or
+    functionality loss ! Also, try to leave room in case
+    C18 moves into the ATmega socket.
+
+commit 6ae7afdf1537cd1f5b3450777725f3e853191fb9
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Sat Oct 29 19:56:15 2011 +0200
+
+    Board: remove tha ability to feed 5 V through the serial connector.
+    
+    This is not of much use and had the unfortunate side effect of
+    destroying the USB-TTL converter while plugging improperly.
+
+commit c46d844f571dd93ca7740391667a4ecc919b6268
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Fri Oct 28 20:40:44 2011 +0200
+
+    Board: remove max endstops an rewire the remaining ones.
+    
+    Maximum endstops will eventually go onto the extension board.
+    There is now no longer a conflict between some endstops and
+    the ICMP header. Should be simple to kook up an SD Card reader now.
+
+commit 74f6d311092c02b6353720c6c256e27e8a747abe
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Fri Oct 28 20:26:05 2011 +0200
+
+    Board: move the crystal inside the ATmega socket.
+    
+    Obvious advantage: it saves board space.
+    Less obvious: it's easy to keep it there while maintaining
+    short tracks to the CPU's clock input.
+
+commit c8c5a78d72faea0198a9627b56eebb3fa5b19ac4
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Fri Oct 28 20:07:49 2011 +0200
+
+    Add pockets to the DIP40 footprint.
+    
+    This gives a good hint where we can place components within that
+    socket.
+
+commit 876ee67e69196100ab3ccc6b6a7c98e989a47321
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed Aug 17 00:33:22 2011 +0200
+
+    Add a HowTo for making a release.
+
+commit 9d40962f1e464bd97f07803a62aa520c390d6242
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Tue Aug 16 22:41:52 2011 +0200
+
+    tools/make-release.sh: git also requires a plain git push.
+
+commit a9c492d15ee930a92b5fdb0ceec59f3311788237
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Tue Aug 16 22:38:10 2011 +0200
+
+    Make Release 1.3.1.
+
+commit 5461712e944de8d992091d75973ca12da74bbda6
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Tue Aug 16 22:34:35 2011 +0200
+
+    arduino support: adjust boards.txt to new fuse settings.
+
+commit 912777ffc3439c8246e34a3f2bb70f83c7204c40
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Fri Aug 12 15:06:07 2011 +0200
+
+    Add data sheet for the Bootloader protocol.
+
+commit 812252a732310d4d97be5b378ec2bca28bf21bec
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Fri Aug 12 14:54:34 2011 +0200
+
+    Bootloader: reconsider the page erase strategy and save 60 bytes.
+    
+    As avrdude always sends complete flash memory pages, there's no point
+    in tracking distinct counters for pages to be erased vs. pages to be
+    written.
+
+commit 34de8d68a717c4744f40724c8f04b4c4343f7ecb
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Fri Aug 12 14:47:28 2011 +0200
+
+    SetupTest: turn the other heater LED off while one is blinking.
+    
+    Formerly, the status of the second heater was undefined, which sometimes
+    led to user confusion.
+
+commit d9061450c527be6287e7ead1ac0cd615b2b0166e
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Thu Aug 11 15:20:16 2011 +0200
+
+    Bootloader: take measures to not accidently overwrite it's self.
+
+commit 80f55a0a701a1d6c7a7135cd63920b7eeb8bd399
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Thu Aug 11 15:14:02 2011 +0200
+
+    Bootloader: remove support for lock bits.
+    
+    This is a somewhat questionable feature, as a programmer is required
+    to clear these lock bits again.
+
+commit ac9565a39b9a8eef453c5c2d57320dbd61b78b2a
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Thu Aug 11 15:12:27 2011 +0200
+
+    Bootloader: replace tabs with spaces, remove spaces at line endings.
+    
+    This is a purely cosmetical change.
+
+commit 3a4c77621309f5f03ee099df7a81da6eed1dc6ac
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Fri Jul 22 00:56:40 2011 +0200
+
+    Make Release 1.3.
+
+commit 95dd0c78ac41dbbe451e6e9db0446ac0e1a7db71
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Fri Jul 22 00:16:59 2011 +0200
+
+    tools: refine release making script a bit.
+    
+    Git apparently deletes emptied directories now, so we have to
+    uncommit the old release first, then clean up the file system.
+    
+    Also, .zip and .png are ignored by git now, so we have to
+    force-add them.
+
+commit ca15f8f19c64fbab737a9eae90cf63f90196473c
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Thu Jul 7 22:34:10 2011 +0200
+
+    Add a small setup test firmware.
+    
+    This is for use right after assembly, to make sure basic things work.
+    Nothing fancy, but it compiles in the Arduino IDE.
+
+commit 792a5ee05b685a44cab80b078608b2a18848ee42
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed Jun 29 14:39:52 2011 +0200
+
+    Board: fixed the designator of the Pololus on the silk screen.
+
+commit 2378cb46d4194a733f801355a38173b90568a73c
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed Jun 29 14:07:29 2011 +0200
+
+    Board: fix a misaligned mounting hole.
+    
+    The misalignment was probably introduced unintentionally.
+
+commit ffa59d31df1eb93aad79d8be28443c2f9a53348b
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Sat Jun 25 21:08:53 2011 +0200
+
+    Endstop: add a 'E' and 'D' sign to the TCST1103/2103 footprint.
+    
+    The previous one wasn't unambiguous and nobody told me for several
+    months ... uäääh!
+
+commit ef706ebaa7dedc025fe000ebbc6d01ff11667b81
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Thu Jun 16 00:02:00 2011 +0200
+
+    Board: aligned Temp connectors with the surrounding connectors.
+    
+    Another cosmetics without functional change.
+
+commit fc7d5cc8552fe49e0e00a98fac628c85bb8b42e0
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed Jun 15 22:50:11 2011 +0200
+
+    Board: align CONN3 to CONN2.
+    
+    Also purely cosmetic.
+
+commit 0bad2c43e407760cf363a7bc049bfef7738e5741
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed Jun 15 22:33:43 2011 +0200
+
+    Board: align C1 with the nearby connector.
+    
+    Just a cosmetic change.
+
+commit 0b233abc2a3e14407c6c0c81576a4b570cf0c6b6
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Tue Jun 14 17:47:10 2011 +0200
+
+    Board: bump printed version number to 1.3, note new licence.
+
+commit 87b6a8a5427ff52b914396f72c9138b3d5e3bb39
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Sat Jun 11 11:00:41 2011 +0200
+
+    Removed two footprints which are likely never used.
+
+commit b371fd7b582dd5873ec48a2781ce9a31b77b1684
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Sat Jun 11 10:58:28 2011 +0200
+
+    Board: make the MOSFETs upright.
+    
+    This should allow better cooling and attaching a heatsink. Effectively,
+    it just replaces the silk of the footprint ...
+    
+    Also made the GND trace there even thicker.
+
+commit 0ebc6ca6a51ef424171d0f222a7873911ea184bb
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Sat Jun 11 09:02:48 2011 +0200
+
+    Board: remove the Debug LED again.
+    
+    This was added too early, as this pin is also used for the X_MIN
+    endstop. When introducing SD card support this endstop is expected
+    to go elsewhere, though.
+
+commit 944b14ede3cc9d782cc00e328e9197e429942847
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed Jun 8 23:10:57 2011 +0200
+
+    Both PCBs: raise minimum track width to 30 mil.
+    
+    Was 20 mil before. According to users of the toner etching method,
+    wider tracks are more reliable. So, increasing track width without
+    lowering minimum copper track (important for isolation milling)
+    is a good thing.
+
+commit 06cefc8fd030718a100382d2d57676fa740e708e
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed Jun 8 22:16:34 2011 +0200
+
+    Board: same clearance against copper planes for all tracks (32 mil).
+    
+    The endstop PCB was already fine.
+
+commit 47c3431476001517dd9c3d7af02dc6eef2158a30
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed Jun 8 21:47:38 2011 +0200
+
+    Board: made traces from the MOSFETs a bit shorter and thicker.
+    
+    There's a lot of current and this also makes a bit more room.
+
+commit ab146d9e99d91dc51ff96e892f91eeee76b2a7ca
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed Jun 8 21:21:35 2011 +0200
+
+    Board: made drill holes for the Molex 4 Pin and Molex 156 both 1.6 mm.
+    
+    This is a bit smaller than recommended by Molex, which takes account
+    for the fact Gen7 is single sided. Five drill sizes now, which is about
+    as good as we can get.
+
+commit 75c1edd8683a7e3e55efa0049108d81f777c4ca1
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed Jun 8 20:48:22 2011 +0200
+
+    Board: reduced the ATX24's drill size to 1.3 mm.
+    
+    This was 1.4 mm and takes account for the fact Gen7 is single sided,
+    so no solder can flow into the hole anyways.
+
+commit 10008983f1e746a15a886b646a99265ec089915c
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed Jun 8 13:40:14 2011 +0200
+
+    Board: reduce the drill size of screw terminals to 40 mil / 1.02 mm.
+    
+    Both, the screw terminals coming from Reichelt as well as those
+    coming with Gen2 electronics have 0.9 mm pins, so 1.0 mm is
+    totally sufficient ... and yet another custom drill size less.
+
+commit 51787c5f7846fb890bbee30c45f86af8da98eed2
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Tue Jun 7 20:07:59 2011 +0200
+
+    Added data sheet for the Molex KK 156 header.
+    
+    These are the headers used for the motor and heater connectors.
+
+commit c66f35c3a347c6a42e80a417581bf8312140399d
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Tue Jun 7 19:53:12 2011 +0200
+
+    Board: reduced the drill size of the MOSFETs to 40 mil = 1.02 mm.
+    
+    In the data sheet 0.66 to 0.93 mm are specified, so this is safe.
+    Seven drill sizes are left, now.
+
+commit 6ff42288c274dfb2f48522414d08f591d14be5dc
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Tue Jun 7 14:43:11 2011 +0200
+
+    Board: made the 20 MHz crystal the default.
+
+commit 99015137dec6540e16e360bc24c051a02b8b8a6c
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Tue Jun 7 12:56:08 2011 +0200
+
+    Board: removed a now obsolete wire bridge.
+
+commit 54183e8b45a07bf28b4a2a62536ddd1b00bff8d9
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Tue Jun 7 01:12:30 2011 +0200
+
+    Board: add another disk power type connector for supplying heaters.
+    
+    Also, the 12 volts stuff was divided into two parts. This allows
+    to have different voltages for heaters and motors without making
+    things more complex for newbie users.
+
+commit 76bf7046cde4c262e2767ecbf6b4626430d8bab9
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Mon Jun 6 22:13:36 2011 +0200
+
+    Board: made Standby and Debug LED yellow.
+
+commit fad314ece216d3f46c343c3f013deda18a11fd57
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Mon Jun 6 16:41:44 2011 +0200
+
+    Board: the debug LED is back!
+
+commit 539651d06054fe1308e29ae88ed68191a0c780b5
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Mon Jun 6 15:08:05 2011 +0200
+
+    Board: raise power debug LED pre-resistors to 1K.
+    
+    Formerly this was 180 ohms. With 1K the light is still clearly visible.
+
+commit dae1915684d4715c0b8bd83a102fb1fc6742aae2
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Sat Jun 4 01:42:51 2011 +0200
+
+    Board: replaced the footprint for the ATX20 connector.
+    
+    The footprint has now 24 pins for compatibility with
+    ATX24 power supplies.
+
+commit ea55def3a6d89ad1967e2865161f6f5257335409
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Sat Jun 4 00:43:53 2011 +0200
+
+    Minor fix on the ATX20 symbol.
+
+commit a803a3a125d3d32285434f55f6f2087e1455ebca
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Sat Jun 4 00:19:29 2011 +0200
+
+    Removed the three-jumper, as the plans for this have vanished.
+
+commit 676478d9dd5ae80e03b5b17f600376a1fedd4d4d
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Fri May 27 00:18:07 2011 +0200
+
+    Add a few more data sheets regarding power headers.
+    
+    Also remove ones no longer in use.
+
+commit 7d994eb0f72f23d41326cb84ffede6e9f4801fae
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Thu May 26 22:56:34 2011 +0200
+
+    Replace 3 pin thermistor headers with 2 pin ones.
+    
+    This not only lowers the price by a few cent, it also allows a
+    simpler routing, removes a wire bridge and makes it unambiguous
+    on where the thermistor should be connected.
+
+commit b1c957244a01351e91988985ad4e8fefc8a18dca
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Thu May 26 21:18:25 2011 +0200
+
+    Add a Molex KK100 2-pin header.
+
+commit 077ce0058d9b506651d7d65cf539371710b1d66b
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed May 25 22:20:37 2011 +0200
+
+    Remove the I2C header.
+    
+    Apparently, nobody uses this, so save cost and board space.
+
+commit 6caa8a681c04307468441c3a9995abbe9271f059
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed May 25 21:27:25 2011 +0200
+
+    Replace the heater connectors with that new Combi-2 type.
+    
+    Several enhancements:
+    
+    - Only two pins -> less confusion.
+    
+    - Thicker pins -> more current possible.
+    
+    - You can use screw terminals.
+
+commit ca9f6d19aeffbf538358526a7508ce3a1500194c
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed May 25 20:56:02 2011 +0200
+
+    Remove the MOSFET for the fan.
+    
+    This has three reasons:
+    
+    1 A questionaire resulted in nobody actually using a fan.
+    
+    2 If you really want a fan, connect it to the power supply
+      directly. Like the PSU, it will switch off at end of printing.
+    
+    3 Cost and board space, of course. Cost saving is about EUR 1.-.
+    
+    No worries, the board space will be reused quickly, bigger headers
+    are already lurking around the corner.
+
+commit 12f52eddd9a03a3b79b9f80815613f01f5569d20
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed May 25 19:48:59 2011 +0200
+
+    Add a Combi-2 footprint, derived from the Combi-4 one.
+    
+    This is to be used for the heater connectors, as these draw even
+    more current than the motors.
+
+commit d3ddc97192fedf29aa10be6ce9b34d61bba05b9a
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Wed May 25 19:16:12 2011 +0200
+
+    Removed the Molex .156 and the AKL 220 connector.
+    
+    They're no longer used and were replaced by the Combi-4 footprint.
+
+commit 1dda1e8d53240a2b3997ccdcf999be761e4d97b2
+Author: Markus Hitter <mah@jump-ing.de>
+Date:   Tue May 24 00:07:30 2011 +0200
+
+    Make use of this new combi footprint ...
+    
+    ... and allow the GND track near the top border to be wider, as
+    there is more space now.
+
+commit dfba
