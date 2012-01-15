@@ -1,3 +1,12 @@
+This Version of the Gen7 Electronics uses an extension board to add SD-card support
+
+Status:
+
+ * motors, endstops, communication with SD-card seem to work fine
+ * heater and thermistor still need testing
+ * no testprint yet (basically because my printer isn't finished)
+
+
 Design Goals
 
  * PCB easily to manufacture on a RepRap.
@@ -12,15 +21,16 @@ Features
 
  * Single board solution.
  * Single sided PCB.
- * Pololu stepper drivers, exchangeable.
+ * Pololu stepper drivers, exchangeable. // may change to bigger through hole stepper drivers from Toshiba
+											to reduce cost and improve heat management
  * 4x stepper motor drivers with 1/16 microstepping.
+ * printing from microSD-Card
  * TODO: on-board USB-RS232 converter.
  * Integrated hardware for driving one extruder (stepper, heater and thermistor).
  * Integrated hardware for a heated bed (heater, thermistor).
- * Integrated hardware for driving a fan.
  * Ready to be hooked up on a generic PC power supply unit (PSU).
  * Use of standard connectors.
- * Debug LEDs for power, Fan and both heater outputs.
+ * Debug LEDs for power and both heater outputs.
  * Can turn PSU on and off in software.
  * Reset button. 
 
