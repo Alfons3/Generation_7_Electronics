@@ -1,11 +1,13 @@
 This Version of the Gen7 Electronics uses an extension board to add SD-card support
 
+I stopped working on this project !
+Please use the current version from Traumflug.
+
 Status:
 
- * motors, endstops, communication with SD-card seem to work fine
- * heater and thermistor still need testing
- * no testprint yet (basically because my printer isn't finished)
-
+ * Printing works normal.(at least with my board)
+ * communication with sd-card is unstable, printing from sd-card is not possible
+   (maybe because the level conversation with resistors produce to many communication errors)
 
 Design Goals:
 
